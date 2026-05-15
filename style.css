@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f9fa;
+}
+
+/* Navbar */
+header {
+    background: #222;
+    padding: 20px 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+}
+
+.hero-text h3 {
+    margin: 15px 0;
+    color: #4da6ff;
+}
+
+.hero-text p {
+    width: 500px;
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 28px;
+    border: none;
+    background: #4da6ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* About */
+.about {
+    padding: 80px;
+    background: white;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* Skills */
+.skills {
+    padding: 80px;
+    background: #eef4ff;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 40px;
+}
+
+.skill-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.box {
+    background: white;
+    padding: 30px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.box h3 {
+    color: #4da6ff;
+}
+
+/* Contact */
+.contact {
+    padding: 80px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* The main container holding everything */
+.hero-content {
+  display: flex;
+  align-items: center;       
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;        
+  margin: 0 auto;            
+  padding: 20px;
+}
+
+/* Controls the width of your text side */
+.hero-text {
+  flex: 1;
+  max-width: 50%;            
+  color: #ffffff;            
+}
+
+/* Controls the photo side */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+/* Ensures your profile photo behaves and fits its container */
+.hero-image img {
+  max-width: 350px;          
+  height: auto;
+  border-radius: 10px;       
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
